@@ -10,31 +10,44 @@ namespace DistribuicaoDeFrequencias
     {
         static void Main(string[] args)
         {
-            int num, amplitudeClasse = 0, pm = 0, ordem = 0, contFi = 0;
-            int linhas, colunas;
+            int num, amplitudeClasse, pm, ordem, contFi;
+            int linhas, colunas, maior, menor;
             List<int> dados = new List<int>();
             List<int> dados2 = new List<int>();
             List<int> calcularFi = new List<int>();
             int[,] rol;
             char opc;
 
-            //ENTRADA DE QUANTOS DADOS SERÃO INSERIDOS NO ROL
+            //DEFINIÇÃO DE QUANTOS DADOS SERÃO INSERIDOS
             Console.Write("Digite a quantidade de dados: ");
             num = int.Parse(Console.ReadLine());
+
+            //LEITURA DOS DADOS A SEREM INSERIDOS E DEFININDO O MAIOR E O MENOR NUMERO
+            maior = 0;
+            menor = 1000;
 
             for (int i = 0; i < num; i++)
             {
                 Console.Write("Insira o " + (i + 1) + "º valor: ");
                 dados.Add(int.Parse(Console.ReadLine()));
+                if (menor >= dados[i])
+                {
+                    menor = dados[i];
+                }
+                else if (maior <= dados[i])
+                {
+                    maior = dados[i];
+                }
             }
 
+            Console.WriteLine("maior: " + maior + ", menor: " + menor);
 
             //ORDENAR DADOS EM FORMA CRESCENTE
             dados.Sort();
 
             
 
-            //ROL
+            //DEFINIÇÃO DO TAMANHO DO ROL
             Console.WriteLine("Defina as dimensões do ROL: (LINHAS x COLUNAS)");
             linhas = int.Parse(Console.ReadLine());
             colunas = int.Parse(Console.ReadLine());
@@ -46,13 +59,12 @@ namespace DistribuicaoDeFrequencias
                 for (int j = 0; j < colunas; j++)
                 {
                     
-                    rol[i, j] = dados[x];
-                    x += 1;
+                    rol[i, j] = dados[x++];
                 }
             }
 
             
-
+            //IMPRESSÃO DO ROL NA TELA PARA O USUARIO
             for (int i = 0; i < linhas; i++)
             {
 
@@ -82,7 +94,7 @@ namespace DistribuicaoDeFrequencias
                 amplitudeClasse = int.Parse(Console.ReadLine());
             }
             else if (opc == 'N') { amplitudeClasse = num / ordem; }
-            
+
             Console.Write("| ORDEM | CLASSE | FI | FIAC | FR | FR% | FR%AC |");
 
 
