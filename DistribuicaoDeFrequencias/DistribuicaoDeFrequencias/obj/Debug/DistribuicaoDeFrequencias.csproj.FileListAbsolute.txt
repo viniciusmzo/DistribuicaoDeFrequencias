@@ -1,0 +1,7 @@
+C:\Users\vinny\source\repos\DistribuicaoDeFrequencias\DistribuicaoDeFrequencias\bin\Debug\DistribuicaoDeFrequencias.exe.config
+C:\Users\vinny\source\repos\DistribuicaoDeFrequencias\DistribuicaoDeFrequencias\bin\Debug\DistribuicaoDeFrequencias.exe
+C:\Users\vinny\source\repos\DistribuicaoDeFrequencias\DistribuicaoDeFrequencias\bin\Debug\DistribuicaoDeFrequencias.pdb
+C:\Users\vinny\source\repos\DistribuicaoDeFrequencias\DistribuicaoDeFrequencias\obj\Debug\DistribuicaoDeFrequencias.csprojAssemblyReference.cache
+C:\Users\vinny\source\repos\DistribuicaoDeFrequencias\DistribuicaoDeFrequencias\obj\Debug\DistribuicaoDeFrequencias.csproj.CoreCompileInputs.cache
+C:\Users\vinny\source\repos\DistribuicaoDeFrequencias\DistribuicaoDeFrequencias\obj\Debug\DistribuicaoDeFrequencias.exe
+C:\Users\vinny\source\repos\DistribuicaoDeFrequencias\DistribuicaoDeFrequencias\obj\Debug\DistribuicaoDeFrequencias.pdb
